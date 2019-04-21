@@ -105,4 +105,4 @@
 游戏结果...
 
 
-![avatar](https://github.com/Yuan-hay/CBNY/blob/master/%E6%B8%B8%E6%88%8F%E8%BF%87%E7%A8%8B.png)
+![avatar](https://github.com/Yuan-hay/CBNY/blob/master/%E7%BB%93%E6%9E%9C.png)
