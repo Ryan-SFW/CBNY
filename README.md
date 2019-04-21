@@ -1,3 +1,3 @@
-# CBNY
+Crazy Click
 xjb-click game
 
