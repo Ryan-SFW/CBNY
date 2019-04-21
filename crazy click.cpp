@@ -11,7 +11,7 @@
 #include <unistd.h>
 #endif
 #define e 2.718282
-#define ffa 
+#define ffa 13
 #define t0 0.02
 
 using namespace graphene;
