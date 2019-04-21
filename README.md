@@ -71,7 +71,7 @@
 准备开始...
 
 
-![avatar](https://github.com/Yuan-hay/CBNY/blob/master/%E6%B8%B8%E6%88%8F%E5%BC%80%E5%A7%8B.png)
+![cbny](https://github.com/Yuan-hay/CBNY/blob/master/%E6%B8%B8%E6%88%8F%E5%BC%80%E5%A7%8B.png)
 
 
 --------------------------
@@ -88,10 +88,17 @@
 ![avatar](https://github.com/Yuan-hay/CBNY/blob/master/%E6%B8%B8%E6%88%8F%E8%BF%87%E7%A8%8B.png)
 
 --------------------------
-如果你能克服“万难”，再目标频率附近坚持1秒的时长，你便可以晋级...
+如果你能克服“万难”，再目标频率附近坚持2秒的时长，你便可以晋级...
 
 
 ![avatar](https://github.com/Yuan-hay/CBNY/blob/master/%E6%99%8B%E7%BA%A7.png)
+
+--------------------------
+蓄势条系统...
+
+
+![avatar](https://github.com/Yuan-hay/CBNY/blob/master/%E8%93%84%E5%8A%BF%E6%9D%A1.png)
+
 
 
 --------------------------
