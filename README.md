@@ -38,7 +38,7 @@
 ![avatar](https://github.com/Yuan-hay/CBNY/blob/master/%E6%B8%B8%E6%88%8F%E8%BF%87%E7%A8%8B.png)
 
 --------------------------
-晋级...
+如果你能克服“万难”，再目标频率附近坚持1秒的时长，你便可以晋级...
 
 
 ![avatar](https://github.com/Yuan-hay/CBNY/blob/master/%E6%99%8B%E7%BA%A7.png)
