@@ -24,16 +24,12 @@ class users : public contract
     std::vector<float> timepoints;
     std::vector<float>::iterator it; 
     float P;
-    
     float k1, k2, k3, k4, K1, K2, K3, K4;
     float n1, n2, n3, n4;
-    float fjnow£¬ P;
-    // ffaÎªf·§£¬fjnowÎªµ±Ç°½ø¶ÈÌõÖµ£¬PÎªÎ»ÖÃpoint
+    float fjnowï¼Œ P;
     float* ptr_fjnow=&fjnow, ptr_P=&P;
     int wintime=0;
     float rate;
-    
-    
     
     public:
     users(std::string Usersname){
@@ -41,17 +37,14 @@ class users : public contract
         vector<float> timepoints;
     }
     ~users(){};
-    
     std::string get_username();
     void set_username();
     void set_wintime(){
         wintime++;
-    };
-    
+    };    
     float nowheight();
     float nowtime();
-    
-    //¹©Ç°¶Ëµ÷ÓÃº¯Êý
+  
     void settime(){
         time_t timepoint;
         time(&timepoint);
@@ -84,7 +77,6 @@ class users : public contract
         return *ptr_P;
     };
     
-    
     // K1<<K2
     float f4(float* ptr_P){
         *ptr_P = K1*t0 + *ptr_P;
@@ -96,8 +88,6 @@ class users : public contract
         return *ptr_P;
     };
     
-    
-    //PmoÎªÄ¿±êÆµÂÊÖµ
     float f6(float* ptr_P, float F1()){
         *ptr_P = -n4*pow(e,K4*(2-*ptr_P+ Pmo))*t0 + *ptr_P;
         return *ptr_P;
@@ -111,14 +101,9 @@ class users : public contract
     float f8(float* ptr_P, float F1()){
         *ptr_P = (F1()-*ptr_P)*2*t0 + *ptr_P;
         return *ptr_P;
-    };
-    
-    
-    
-    
+    };  
 }
 
-//Dapp functions:
 std::string getname(){
     return name;
 };
@@ -126,7 +111,6 @@ std::string getaccount(){
     return account;
 };
 
-//
     void withdraw(std::string to_account, contract_asset amount)
     {
         int64_t account_id = get_account_id(to_account.c_str(), to_account.size());
@@ -173,8 +157,7 @@ int main(){
     double a;
     int fm;
     double totalmoney=usersnum*money;
-    
-    
+  
     for(int i=0, i<usersnum, i++){
         usersnamelist.push_back(getname());
     }
@@ -184,7 +167,6 @@ int main(){
     for(int i=0, i<usersnum, i++){
         userslist[i].setaccount(getaccount());
     }
-    
     print("Ready...Go!", "\n");
     time(&Start_t);
 while(true){
@@ -233,7 +215,6 @@ while(true){
     diff_t = difftime(end_t, start_t);
     sleep(0.02-diff_t);
 }
-    //¼ÆËã·ÖÄ¸
     for(int i=0, i<usersnum, i++){
         fm+=power((userslist[i]->wintime),a);
     }
@@ -243,11 +224,9 @@ if(fm>0){
     }
 }
 else{
-    //ÊÕÈ¡Ó¶½ðºó
      withdraw(userslist[i]->account , totalmoney*0.95/usersnum);
       withdraw(cbny , totalmoney*0.05);
 }
-    //»ñµÃ½±Àø
     if(fm>0){
         for(int i=0, i<usersnum, i++){
             withdraw(userslist[i]->account , userslist[i]->rate/fm*totalmoney);
